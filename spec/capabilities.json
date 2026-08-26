@@ -1,0 +1,23 @@
+[
+  {
+    "capability": "architect",
+    "required": true,
+    "reason": "Always included to oversee technical consistency of the change, even though this is a minimal edit.",
+    "requirement_source": null,
+    "priority": 0
+  },
+  {
+    "capability": "backend",
+    "required": true,
+    "reason": "The request explicitly asks to modify backend/app.py to add server-side logic (a subtract function) and its unit test.",
+    "requirement_source": "Add a subtract(a, b) function to backend/app.py",
+    "priority": 0
+  },
+  {
+    "capability": "testing",
+    "required": true,
+    "reason": "Always included to execute the unit tests and confirm the new function and test pass.",
+    "requirement_source": null,
+    "priority": 0
+  }
+]

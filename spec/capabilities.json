@@ -1,0 +1,23 @@
+[
+  {
+    "capability": "architect",
+    "required": true,
+    "reason": "Always included to ensure the small change fits cleanly into the existing app.py structure.",
+    "requirement_source": null,
+    "priority": 0
+  },
+  {
+    "capability": "backend",
+    "required": true,
+    "reason": "The request explicitly asks for a new function to be added to backend/app.py alongside existing logic.",
+    "requirement_source": "subtract(a, b) function to backend/app.py",
+    "priority": 0
+  },
+  {
+    "capability": "testing",
+    "required": true,
+    "reason": "Always included to execute the unit test and confirm the new function works correctly.",
+    "requirement_source": "matching unit test",
+    "priority": 0
+  }
+]

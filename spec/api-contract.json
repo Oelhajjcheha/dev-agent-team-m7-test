@@ -1,0 +1,9 @@
+{
+  "summary": "Added a subtract(a, b) function to backend/app.py matching the style of the existing add(a, b) function, plus unit tests covering typical and edge cases (negative numbers and zero).",
+  "notes": [
+    "No existing backend/app.py content was provided in the task context, so a minimal add(a, b) function was assumed to exist with the standard 'return a + b' implementation; subtract(a, b) was added alongside it following the same style.",
+    "Tests are written in pytest-compatible style (plain assert functions) since no test framework/dependency was specified and no external dependencies were to be added; these also run fine under pytest if installed.",
+    "No database or additional data model was required for this task since it only involves adding a pure function to an existing script."
+  ],
+  "endpoints": []
+}

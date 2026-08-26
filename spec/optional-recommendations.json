@@ -1,0 +1,4 @@
+[
+  "Could add additional arithmetic functions (multiply, divide) for a more complete utility module.",
+  "Could add input validation/type checking to add and subtract if non-numeric inputs are a concern."
+]

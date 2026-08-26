@@ -1,0 +1,19 @@
+{
+  "architecture_style": "single-module script (existing monolithic backend/app.py with plain functions)",
+  "frontend": null,
+  "backend": "Plain Python function subtract(a, b) added to backend/app.py, matching the existing add(a, b) function's signature, style, and return behavior (no new classes, dependencies, or module restructuring).",
+  "database": null,
+  "authentication": null,
+  "integrations": [],
+  "shared_contracts": [
+    "Function signature contract: subtract(a, b) returns a - b, mirroring add(a, b)'s parameter types and return type conventions."
+  ],
+  "security_requirements": [],
+  "testing_strategy": "Add a unit test (using the same test framework/file location as existing tests for add, e.g. unittest or pytest) that verifies subtract(a, b) returns correct results for representative inputs, mirroring the structure of the existing add test.",
+  "technical_constraints": [
+    "Do not modify or refactor the existing add(a, b) function or unrelated code in app.py.",
+    "Keep the change minimal and consistent with existing code style/conventions in app.py.",
+    "No new external dependencies."
+  ],
+  "rationale": "This is a trivial, additive change to an existing simple script-style module. Introducing layers, services, or new architecture would be unnecessary overhead. The key design decision is simply to mirror the existing add(a, b) function's conventions exactly so the module stays consistent, and to place the test alongside existing tests for add using the same testing approach already in use."
+}

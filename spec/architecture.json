@@ -1,0 +1,19 @@
+{
+  "architecture_style": "single-module utility function addition",
+  "frontend": null,
+  "backend": "Existing backend/app.py Python module; add a subtract(a, b) function following the same signature style, code conventions, and location as the existing add(a, b) function. No new modules, classes, or dependencies required.",
+  "database": null,
+  "authentication": null,
+  "integrations": [],
+  "shared_contracts": [
+    "Function signature contract: subtract(a, b) returns a - b, mirroring add(a, b)'s parameter and return style (types, error handling behavior, etc.)"
+  ],
+  "security_requirements": [],
+  "testing_strategy": "Add a unit test for subtract(a, b) alongside the existing test(s) for add(a, b), using the same test framework and file/location conventions already established in the project (e.g. same test file or a colocated test module). Cover typical cases and any edge cases (e.g. negative numbers) consistent with existing add() test coverage.",
+  "technical_constraints": [
+    "No changes to existing add(a, b) behavior or signature",
+    "Keep implementation minimal and consistent with existing code style in backend/app.py",
+    "No new external dependencies"
+  ],
+  "rationale": "This is a small, additive change to an existing single-file module, so a full architectural pattern is unnecessary \u2014 the right approach is simply to mirror the existing add(a, b) implementation and its test pattern exactly, minimizing risk and keeping the change trivially reviewable. No new components, storage, or interfaces are needed since the scope is limited to one pure function and its corresponding test."
+}

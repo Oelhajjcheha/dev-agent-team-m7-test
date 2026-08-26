@@ -1,0 +1,9 @@
+{
+  "summary": "Added a subtract(a, b) function to backend/app.py mirroring the existing add(a, b) style, plus a unit test covering typical, zero, and negative inputs.",
+  "notes": [
+    "No existing test file was shown in the provided repository excerpt, so a new backend/test_app.py was created mirroring the expected structure of the existing add(a, b) test, including a test_add case for consistency.",
+    "Assumed tests import directly from 'app' module (backend/app.py) consistent with the backend/__init__.py package marker.",
+    "No database or data model changes were needed for this single-module utility function task."
+  ],
+  "endpoints": []
+}

@@ -1,0 +1,18 @@
+{
+  "architecture_style": "single-module utility library (no service/API layer)",
+  "frontend": null,
+  "backend": "Plain Python function added to backend/app.py: def subtract(a, b): return a - b, following the exact style/signature conventions of the existing add(a, b) function (naming, docstrings if present, type handling).",
+  "database": null,
+  "authentication": null,
+  "integrations": [],
+  "shared_contracts": [
+    "Function signature contract: subtract(a, b) returns a - b, matching the parameter style and return type behavior of add(a, b)."
+  ],
+  "security_requirements": [],
+  "testing_strategy": "Add a unit test for subtract(a, b) in the same test file/framework used for add(a, b) (mirror naming convention, e.g. test_subtract alongside test_add), covering at least one typical case and any edge case already covered for add (e.g. negative numbers) for consistency.",
+  "technical_constraints": [
+    "Do not refactor or restructure existing app.py beyond adding the new function.",
+    "Keep the change minimal and consistent with existing code style (no new dependencies, no new modules)."
+  ],
+  "rationale": "This is a trivial, additive change to an existing simple module \u2014 no new architecture, layers, or infrastructure are warranted. The design goal is purely consistency: subtract should look and behave like a sibling of add, and its test should mirror the existing add test in structure so the codebase stays uniform and easy to review."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "Fixed CI import error by using a relative import so pytest can resolve the backend module correctly.",
+  "notes": [
+    "No existing test file was shown in the provided repository excerpt, so a new backend/test_app.py was created mirroring the expected structure of the existing add(a, b) test, including a test_add case for consistency.",
+    "Assumed tests import directly from 'app' module (backend/app.py) consistent with the backend/__init__.py package marker.",
+    "No database or data model changes were needed for this single-module utility function task.",
+    "Moved the test file to the repository root (as backend/test_app.py) and changed the import to 'from backend.app import add, subtract' so pytest can resolve the 'backend' package correctly when run from the repo root, matching the existing backend/__init__.py package structure.",
+    "Deleted the old backend/test_app.py is not possible via this diff format; ensure the old backend/test_app.py content is removed or overwritten if it still exists at that path to avoid duplicate/conflicting test collection."
+  ],
+  "endpoints": []
+}

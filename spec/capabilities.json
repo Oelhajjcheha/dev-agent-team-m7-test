@@ -1,0 +1,23 @@
+[
+  {
+    "capability": "architect",
+    "required": true,
+    "reason": "Core infrastructure capability always included to oversee integration of the new function into the existing module.",
+    "requirement_source": null,
+    "priority": 0
+  },
+  {
+    "capability": "backend",
+    "required": true,
+    "reason": "The request explicitly asks to modify backend/app.py, which contains server-side logic functions.",
+    "requirement_source": "subtract(a, b) function to backend/app.py",
+    "priority": 0
+  },
+  {
+    "capability": "testing",
+    "required": true,
+    "reason": "Core infrastructure capability always included to execute and validate the new unit test against the codebase.",
+    "requirement_source": null,
+    "priority": 0
+  }
+]

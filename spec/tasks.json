@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BE-001",
+    "assigned_agent": "backend",
+    "title": "Implement subtract(a, b) in app.py",
+    "description": "Add a subtract(a, b) function to backend/app.py, following the same style and conventions as the existing add(a, b) function, and add a corresponding unit test that mirrors the structure of the existing test for add(a, b).",
+    "dependencies": [],
+    "acceptance_criteria": [
+      "backend/app.py contains a subtract(a, b) function that returns a - b",
+      "subtract(a, b) matches the coding style/signature conventions of the existing add(a, b) function",
+      "A unit test exists for subtract(a, b) that verifies correct results for typical, zero, and negative inputs, matching the structure of the existing add(a, b) test",
+      "All existing tests, including the new subtract test, pass successfully"
+    ],
+    "status": "pending",
+    "priority": 0,
+    "phase": "build"
+  }
+]

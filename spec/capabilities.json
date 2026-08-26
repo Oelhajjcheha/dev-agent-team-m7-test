@@ -1,0 +1,23 @@
+[
+  {
+    "capability": "architect",
+    "required": true,
+    "reason": "Always included to oversee any structural implications of the change, even though this is a small addition.",
+    "requirement_source": null,
+    "priority": 0
+  },
+  {
+    "capability": "backend",
+    "required": true,
+    "reason": "The user explicitly asked for a new function to be added to backend/app.py.",
+    "requirement_source": "Add a subtract(a, b) function to backend/app.py",
+    "priority": 0
+  },
+  {
+    "capability": "testing",
+    "required": true,
+    "reason": "The user explicitly requested a matching unit test, and testing infrastructure is always required to execute it.",
+    "requirement_source": "matching unit test",
+    "priority": 0
+  }
+]

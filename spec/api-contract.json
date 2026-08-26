@@ -1,0 +1,9 @@
+{
+  "summary": "Added a subtract(a, b) pure function to backend/app.py alongside the existing add(a, b) function, plus unit tests covering both functions.",
+  "notes": [
+    "No existing backend/app.py or database contract was provided, so add(a, b) and subtract(a, b) were implemented as simple pure functions with type hints and docstrings following a conventional style.",
+    "No web framework, routes, or database were introduced since this task is a pure-function/unit-test addition with no API scope.",
+    "Tests use Python's built-in unittest module; run with `python -m unittest test_app.py` or `pytest`."
+  ],
+  "endpoints": []
+}

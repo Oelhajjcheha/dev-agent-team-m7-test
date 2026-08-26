@@ -1,0 +1,4 @@
+{
+  "project_name": "Add Subtract Function to Backend",
+  "project_summary": "Extend backend/app.py with a new subtract(a, b) function alongside the existing add(a, b) function, and provide a unit test verifying its correctness."
+}

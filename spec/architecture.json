@@ -1,0 +1,15 @@
+{
+  "architecture_style": "single-module script/library addition (no architectural change)",
+  "frontend": null,
+  "backend": "Add a pure function subtract(a, b) to backend/app.py, defined next to add(a, b), following the same signature style, return convention, and any existing type hints/docstring pattern already used by add(a, b).",
+  "database": null,
+  "authentication": null,
+  "integrations": [],
+  "shared_contracts": [
+    "Function signature contract: subtract(a, b) returns a - b, mirroring the parameter and return style of add(a, b) so callers/tests can treat both functions uniformly."
+  ],
+  "security_requirements": [],
+  "testing_strategy": "Add a unit test (using the same test framework/file already used for add(a, b), e.g. pytest or unittest) that verifies subtract(a, b) for representative cases (positive, negative, zero) consistent with how add(a, b) is already tested.",
+  "technical_constraints": [],
+  "rationale": "unused"
+}

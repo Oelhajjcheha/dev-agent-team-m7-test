@@ -1,0 +1,9 @@
+{
+  "summary": "Added a subtract(a, b) pure function to backend/app.py alongside the existing add(a, b) function, plus a unit test suite covering positive, negative, and zero-value cases for both operations.",
+  "notes": [
+    "No database contract was available; this task is a pure arithmetic utility function with no persistence needs, so no data model was introduced.",
+    "Recreated backend/app.py with the existing add(a, b) function (assumed implementation: return a + b) since no prior file content was provided, then appended subtract(a, b) in the same minimal style.",
+    "Added test_app.py using the standard library unittest module to avoid introducing new dependencies, covering positive, negative, zero, and mixed-sign cases for both add and subtract."
+  ],
+  "endpoints": []
+}

@@ -1,0 +1,19 @@
+{
+  "architecture_style": "single-module script/library addition",
+  "frontend": null,
+  "backend": "Plain Python function added to existing backend/app.py, matching the style and signature pattern of the existing add(a, b) function (pure function, no side effects, no new dependencies).",
+  "database": null,
+  "authentication": null,
+  "integrations": [],
+  "shared_contracts": [
+    "subtract(a, b) returns a - b, mirroring add(a, b)'s calling convention and return type so callers/tests can treat both symmetrically."
+  ],
+  "security_requirements": [],
+  "testing_strategy": "Add a unit test alongside the existing test(s) for add(a, b), using the same test framework/conventions already present in the repo (e.g. same test file or a parallel test function), covering typical values plus edge cases like negative numbers and zero.",
+  "technical_constraints": [
+    "Do not restructure or refactor existing backend/app.py beyond adding the new function.",
+    "No new files, modules, or dependencies needed for this small addition.",
+    "Keep function signature and style consistent with existing add(a, b)."
+  ],
+  "rationale": "This is a minimal, additive change to an existing single-file backend \u2014 introducing new layers, services, or contracts would be unwarranted complexity. The only design decision worth stating is that subtract(a, b) should mirror add(a, b) exactly in style and interface so it's trivial to test and maintain, and that the test should follow the existing test conventions rather than introducing a new testing approach."
+}

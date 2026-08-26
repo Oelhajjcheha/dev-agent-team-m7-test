@@ -1,0 +1,23 @@
+[
+  {
+    "capability": "architect",
+    "required": true,
+    "reason": "Always included to oversee technical structure, though no explicit architecture change is needed here.",
+    "requirement_source": null,
+    "priority": 0
+  },
+  {
+    "capability": "backend",
+    "required": true,
+    "reason": "The user explicitly asked to add a function to backend/app.py.",
+    "requirement_source": "Add a subtract(a, b) function to backend/app.py",
+    "priority": 0
+  },
+  {
+    "capability": "testing",
+    "required": true,
+    "reason": "Always included to execute and validate the unit tests against the generated code.",
+    "requirement_source": null,
+    "priority": 0
+  }
+]

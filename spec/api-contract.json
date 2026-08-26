@@ -1,0 +1,8 @@
+{
+  "summary": "Added a subtract(a, b) function to app.py mirroring the existing add(a, b) function's style, plus a matching unit test.",
+  "notes": [
+    "No existing app.py or test file was provided as context, so a minimal add(a, b) function and its test were assumed/recreated to match the described style before adding subtract(a, b).",
+    "No database contract was available for this task; since it only involves a plain arithmetic function with no persistence needs, no data model was introduced."
+  ],
+  "endpoints": []
+}

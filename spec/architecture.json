@@ -1,17 +1,17 @@
 {
   "architecture_style": "static site (existing Vite frontend, single-file text edit)",
-  "frontend": "Existing Vite frontend project; locate the homepage component/markup containing the current heading and change only the text content to 'Milestone 8 Live Deployment Test', preserving existing tags, classes, and styling.",
+  "frontend": "Existing Vite project structure unchanged; locate the homepage component/template and update the heading text string to 'Milestone 8 Live Deployment Test'. No new components, dependencies, or build config changes.",
   "backend": null,
   "database": null,
   "authentication": null,
   "integrations": [],
   "shared_contracts": [],
   "security_requirements": [],
-  "testing_strategy": "Run the existing Vite build/dev server to confirm the project still compiles and starts without errors; visually or via a simple render check confirm the homepage heading displays exactly 'Milestone 8 Live Deployment Test' with no other visual or functional regressions.",
+  "testing_strategy": "Run the existing Vite dev/build process to confirm the app still compiles and starts; manually or via a simple render check confirm the homepage displays the exact new heading text and that no other UI elements changed.",
   "technical_constraints": [
-    "No changes to styling, layout, or functionality other than the heading text",
-    "No new dependencies, files, or components should be introduced",
-    "Preserve existing HTML structure/tag and CSS class on the heading element"
+    "Do not modify any file other than the one containing the homepage heading text",
+    "No changes to styling, layout, dependencies, or build configuration",
+    "Preserve exact casing/wording: 'Milestone 8 Live Deployment Test'"
   ],
-  "rationale": "This is a one-line content change to an existing static Vite frontend, so no new architecture, backend, or data layer is warranted. The only risk is scope creep or accidental breakage, so the spec constrains the change to the heading text itself and requires a basic build/render check to confirm nothing else was affected."
+  "rationale": "This is a one-line text change in an already-established Vite app, so no architectural changes are needed. The design simply scopes the frontend edit to the minimal target (the heading string) and pairs it with a lightweight smoke test to confirm the build still works and the correct text renders, avoiding any unnecessary process or structural overhead."
 }

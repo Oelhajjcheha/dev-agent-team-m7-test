@@ -1,19 +1,17 @@
 {
-  "architecture_style": "single-module utility function addition",
-  "frontend": null,
-  "backend": "Existing backend/app.py Python module; add a subtract(a, b) function following the same signature style, code conventions, and location as the existing add(a, b) function. No new modules, classes, or dependencies required.",
+  "architecture_style": "static site (existing Vite frontend, no structural changes)",
+  "frontend": "Existing Vite app (framework as currently set up in the repo) \u2014 locate the heading element on the homepage and update its text content to 'Milestone 8 Live Deployment Test'. No changes to components, props, styling, routing, or build config.",
+  "backend": null,
   "database": null,
   "authentication": null,
   "integrations": [],
-  "shared_contracts": [
-    "Function signature contract: subtract(a, b) returns a - b, mirroring add(a, b)'s parameter and return style (types, error handling behavior, etc.)"
-  ],
+  "shared_contracts": [],
   "security_requirements": [],
-  "testing_strategy": "Add a unit test for subtract(a, b) alongside the existing test(s) for add(a, b), using the same test framework and file/location conventions already established in the project (e.g. same test file or a colocated test module). Cover typical cases and any edge cases (e.g. negative numbers) consistent with existing add() test coverage.",
+  "testing_strategy": "Run the existing Vite build/dev server to confirm the project still compiles without errors, and visually/DOM-check that the homepage renders the new heading text exactly as specified with no other visual or functional regressions.",
   "technical_constraints": [
-    "No changes to existing add(a, b) behavior or signature",
-    "Keep implementation minimal and consistent with existing code style in backend/app.py",
-    "No new external dependencies"
+    "Do not modify any file or code outside of the single heading text change",
+    "Preserve existing styling, markup structure, and functionality exactly as-is",
+    "No new dependencies, config changes, or refactors"
   ],
-  "rationale": "This is a small, additive change to an existing single-file module, so a full architectural pattern is unnecessary \u2014 the right approach is simply to mirror the existing add(a, b) implementation and its test pattern exactly, minimizing risk and keeping the change trivially reviewable. No new components, storage, or interfaces are needed since the scope is limited to one pure function and its corresponding test."
+  "rationale": "This is a one-line content edit to an already-deployed static Vite site, so no architectural change is warranted. The only real work is a targeted frontend text edit plus a lightweight sanity check (build + render) to ensure the deployment isn't broken \u2014 anything more (new components, state, backend, tooling) would be unjustified scope creep for a heading text change."
 }

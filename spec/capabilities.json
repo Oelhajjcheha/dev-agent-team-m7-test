@@ -2,21 +2,21 @@
   {
     "capability": "architect",
     "required": true,
-    "reason": "Always included for consistency, though this trivial text change needs minimal architectural input.",
+    "reason": "Always included for planning consistency, though this trivial change needs minimal design input.",
     "requirement_source": null,
     "priority": 0
   },
   {
     "capability": "frontend",
     "required": true,
-    "reason": "The homepage heading is a frontend UI element that needs to be edited.",
+    "reason": "The homepage heading is a UI text element that must be edited in the frontend code.",
     "requirement_source": "Change the Vite homepage heading",
     "priority": 0
   },
   {
     "capability": "testing",
     "required": true,
-    "reason": "Always required to verify the build still works and the heading renders correctly.",
+    "reason": "Always required to verify the build still runs and the heading renders correctly after the change.",
     "requirement_source": null,
     "priority": 0
   }

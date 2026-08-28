@@ -1,17 +1,17 @@
 {
-  "architecture_style": "static site (existing Vite frontend, no structural changes)",
-  "frontend": "Existing Vite app (framework as currently set up in the repo) \u2014 locate the heading element on the homepage and update its text content to 'Milestone 8 Live Deployment Test'. No changes to components, props, styling, routing, or build config.",
+  "architecture_style": "static site (existing Vite frontend, single-file text edit)",
+  "frontend": "Existing Vite frontend project; locate the homepage component/markup containing the current heading and change only the text content to 'Milestone 8 Live Deployment Test', preserving existing tags, classes, and styling.",
   "backend": null,
   "database": null,
   "authentication": null,
   "integrations": [],
   "shared_contracts": [],
   "security_requirements": [],
-  "testing_strategy": "Run the existing Vite build/dev server to confirm the project still compiles without errors, and visually/DOM-check that the homepage renders the new heading text exactly as specified with no other visual or functional regressions.",
+  "testing_strategy": "Run the existing Vite build/dev server to confirm the project still compiles and starts without errors; visually or via a simple render check confirm the homepage heading displays exactly 'Milestone 8 Live Deployment Test' with no other visual or functional regressions.",
   "technical_constraints": [
-    "Do not modify any file or code outside of the single heading text change",
-    "Preserve existing styling, markup structure, and functionality exactly as-is",
-    "No new dependencies, config changes, or refactors"
+    "No changes to styling, layout, or functionality other than the heading text",
+    "No new dependencies, files, or components should be introduced",
+    "Preserve existing HTML structure/tag and CSS class on the heading element"
   ],
-  "rationale": "This is a one-line content edit to an already-deployed static Vite site, so no architectural change is warranted. The only real work is a targeted frontend text edit plus a lightweight sanity check (build + render) to ensure the deployment isn't broken \u2014 anything more (new components, state, backend, tooling) would be unjustified scope creep for a heading text change."
+  "rationale": "This is a one-line content change to an existing static Vite frontend, so no new architecture, backend, or data layer is warranted. The only risk is scope creep or accidental breakage, so the spec constrains the change to the heading text itself and requires a basic build/render check to confirm nothing else was affected."
 }

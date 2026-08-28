@@ -3,12 +3,12 @@
     "id": "FE-001",
     "assigned_agent": "frontend",
     "title": "Update homepage heading text",
-    "description": "Locate the heading element on the Vite homepage and change its text to exactly \"Milestone 8 Live Deployment Test\", leaving all other markup, styling, and content untouched.",
+    "description": "Locate the homepage component in the Vite project and change the heading text to exactly \"Milestone 8 Live Deployment Test\". Do not modify any other text, markup, styling, or logic.",
     "dependencies": [],
     "acceptance_criteria": [
-      "Homepage heading text reads exactly 'Milestone 8 Live Deployment Test'",
-      "No other text, styling, layout, or functionality on the page is modified",
-      "Application still builds and runs without errors"
+      "Homepage heading displays exactly 'Milestone 8 Live Deployment Test'",
+      "No other files, styles, or components are modified",
+      "Application builds and renders without errors"
     ],
     "status": "pending",
     "priority": 0,

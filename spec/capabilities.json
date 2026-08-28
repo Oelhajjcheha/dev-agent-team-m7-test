@@ -2,21 +2,21 @@
   {
     "capability": "architect",
     "required": true,
-    "reason": "Core infrastructure capability always included to oversee integration of the new function into the existing module.",
+    "reason": "Always included to oversee the technical structure of the change, even though this is minimal.",
     "requirement_source": null,
     "priority": 0
   },
   {
-    "capability": "backend",
+    "capability": "frontend",
     "required": true,
-    "reason": "The request explicitly asks to modify backend/app.py, which contains server-side logic functions.",
-    "requirement_source": "subtract(a, b) function to backend/app.py",
+    "reason": "The heading text lives in the client-facing UI and must be edited there.",
+    "requirement_source": "Change the Vite homepage heading",
     "priority": 0
   },
   {
     "capability": "testing",
     "required": true,
-    "reason": "Core infrastructure capability always included to execute and validate the new unit test against the codebase.",
+    "reason": "Always required to verify the build still compiles and renders correctly after the change.",
     "requirement_source": null,
     "priority": 0
   }

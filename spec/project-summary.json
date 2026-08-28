@@ -1,4 +1,4 @@
 {
-  "project_name": "Add Subtract Function",
-  "project_summary": "Add a subtract(a, b) function to the existing backend/app.py module, alongside the existing add(a, b) function, and include a matching unit test for it."
+  "project_name": "Vite Homepage Heading Update",
+  "project_summary": "Update the heading text on the Vite homepage to read \"Milestone 8 Live Deployment Test\" without altering any other functionality, styling, or content."
 }
